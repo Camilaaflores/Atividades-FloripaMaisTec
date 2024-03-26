@@ -16,17 +16,23 @@ body, html {
 }
 
 .sidebar {
-    background-color: #a033ff; /* Cor para a Sidebar */
+    background-color: #ff2f00; /* Cor para a Sidebar */
     width: 200px;
 }
 
-.header {
-    background-color: #0d3bc4; /* Cor para o Header */
+.main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
+.header {
+    background-color: #00ff2f; /* Cor para o Header */
+    height: 50px;
+}
+
 .content {
-    background-color: #0aba53; /* Cor para o Content */
-    flex: 3;
+    background-color: #0012d5; /* Cor para o Content */
+    flex: 1;
     padding: 20px;
 }

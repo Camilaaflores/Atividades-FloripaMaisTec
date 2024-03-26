@@ -1,0 +1,36 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o layout */
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Define duas colunas, a primeira com 200px de largura e a segunda ocupando o restante do espaço */
+    grid-template-rows: auto 1fr; /* Define duas linhas, a primeira com altura automática e a segunda ocupando o restante do espaço */
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content"; /* Define as áreas do grid */
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #33ffd3; /* Cor para a Sidebar */
+    grid-area: sidebar; /* Define a área do grid ocupada pela Sidebar */
+}
+
+.header {
+    background-color: #98db34; /* Cor para o Header */
+    grid-area: header; /* Define a área do grid ocupada pelo Header */
+}
+
+.content {
+    background-color: #ae278e; /* Cor para o Content */
+    grid-area: content; /* Define a área do grid ocupada pelo Content */
+}
