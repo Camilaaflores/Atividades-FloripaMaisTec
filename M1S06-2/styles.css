@@ -1,0 +1,31 @@
+/* styles.css */
+/* Exemplo de estilos adicionais */
+button {
+    background-color: #7afdff;
+    color: rgb(162, 114, 247);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+/* styles.css */
+/* Exemplo de animações CSS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

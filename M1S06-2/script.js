@@ -1,15 +1,20 @@
-// app.js
 
-// Supondo que você tenha um nome de usuário armazenado em uma variável chamada "username"
-let username = "John";
+// Exemplo de validação de formulário com JavaScript
+const form = document.getElementById("myForm");
 
-// Função para atualizar o conteúdo do elemento HTML com o nome do usuário
-function updateUsername() {
-    let usernameElement = document.getElementById("username");
-    usernameElement.textContent = username;
+form.addEventListener("submit", function(event) {
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim();
+
+    if (!isValidEmail(email)) {
+        event.preventDefault();
+        alert("Por favor, insira um endereço de e-mail válido.");
+    }
+});
+
+function isValidEmail(email) {
+    // Implemente sua lógica de validação de e-mail aqui
+    // Este é um exemplo simples de validação de e-mail
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
-
-// Chame a função para atualizar o nome de usuário quando a página carregar
-window.onload = function() {
-    updateUsername();
-};
