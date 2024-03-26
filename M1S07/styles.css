@@ -1,0 +1,32 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o layout */
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #a033ff; /* Cor para a Sidebar */
+    width: 200px;
+}
+
+.header {
+    background-color: #0d3bc4; /* Cor para o Header */
+    flex: 1;
+}
+
+.content {
+    background-color: #0aba53; /* Cor para o Content */
+    flex: 3;
+    padding: 20px;
+}
